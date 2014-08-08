@@ -1,0 +1,1 @@
+xcopy /y "E:\wamp\www\gravitas\pdf\Events_display_pdf.pdf" "D:\graVITas Registrations\Dropbox\2013_Internals\pdf"

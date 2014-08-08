@@ -1,0 +1,233 @@
+*{
+		margin:0;padding:0;
+	}
+	@media handheld { background:url(mbackground.JPG); }
+	@import url("handheld.css") handheld
+	@font-face{
+		font-family:roboto;
+		src:url('Roboto-Condensed.ttf');
+	}
+	BODY{
+		background:url(../img/background.JPG);
+		overflow:hidden;
+	}
+		#wrapper
+		{
+		position:relative;
+		}
+		#main{
+			margin:0 auto;
+		}
+		#top{
+			background-color:rgba(207, 207, 14, 0.28);
+			height:120px;
+			padding:8px;
+			
+		}
+		#logo
+		{
+			margin-top:20px;
+			width:150px;
+			height:80px;
+			float:left;	
+		}
+		#header
+		{
+			float:left;
+			margin-left:180px;
+			margin-top:5px;
+		}
+		H4{
+			font-family:roboto;
+		}
+		
+		#logout{
+			float:right;
+			margin-right:30px;
+			margin-top:40px;
+		}
+		#logout  a{
+			text-decoration:none;
+			font-family : roboto;
+			font-size:23px;
+			color: #1db7cb;
+			transition:color 0.4s,opacity 2s ease-in;
+			-moz-transition:color 0.4s,opacity 2s ease-in;
+			-webkit-transition:color 0.4s,opacity 2s linear;
+			cursor: hand;
+		}
+		#logout a:hover{
+			color:#797979;
+			opacity:1;
+		}
+		#inner_main{
+			border:2px solid #ccc;
+			width:1100px;
+			height:400px;
+			padding:20px;
+			margin:30px auto;	
+		}
+		#autocomplete{
+			margin-top:100px;
+			float:left;
+			width:200px;
+			background:#f1f1f1;
+			height:200px;
+			padding:10px;
+			border-radius:4px;
+			border:1px solid #eee;
+	        box-shadow:0 0 6px #ddd;
+		}
+		#autocomplete input[type="text"] 
+		{ 
+			width: 180px;
+			background-color: rgba(255, 255, 255, 0.4); 
+			border: 1px solid rgba(122, 192, 0, 0.15); 
+			padding: 7px; 
+			font-family: Keffeesatz, Arial; 
+			color: #4b4b4b; 
+			font-size: 14px; 
+			border-radius: 5px; 
+			margin-bottom: 15px; 
+			margin-top: -7px;
+		}
+		
+		#formdiv{
+			margin:0 auto;
+			width:650px;
+			margin-left:230px;
+			background:#f1f1f1;
+			border:1px solid #eee;
+	        box-shadow:0 0 6px #ddd;
+			padding:5px;
+		}
+		#formdiv_inner{
+			
+			width:530px;
+			margin:0 auto;
+		}
+		#formdiv_inner  a{
+			text-decoration:none;
+			font-family : roboto;
+			font-size:25px;
+			cursor: hand;
+			opacity:0.2;
+		}
+		#red{
+			color:red;
+			transition:color 0.1s,opacity 0.5s ease-in;
+			-moz-transition:color 0.1s,opacity 0.5s ease-in;
+			-webkit-transition:color 0.1s,opacity 0.5s linear;
+		}
+		#red:hover{
+			opacity:1;
+		}
+		#green{
+			color:green;
+			transition:color 0.1s,opacity 0.5s ease-in;
+			-moz-transition:color 0.1s,opacity 0.5s ease-in;
+			-webkit-transition:color 0.1s,opacity 0.5s linear;
+		}
+		#green:hover{
+			opacity:1;
+		}
+		#form{
+			
+			font-family:roboto;
+			font-weight:bold;
+			line-height: 23px;
+			font-size:12px;
+			
+		}
+		#form input[type="text"] 
+		{ 
+			width: 380px;
+			background-color: rgba(255, 255, 255, 0.4); 
+			border: 1px solid rgba(122, 192, 0, 0.15); 
+			padding: 7px; 
+			font-family: Keffeesatz, Arial; 
+			color: #4b4b4b; 
+			font-size: 14px; 
+			border-radius: 5px; 
+			margin-bottom: 15px; 
+			margin-top: -7px;
+		}
+		#form input:focus
+		{ 
+		border: 1px solid #ff5400; 
+		background-color: rgba(255, 255, 255, 1); 
+		}
+		#form input.button
+		{ 
+			background: #4b8df9; 
+			display: inline-block; 
+			padding: 5px; 
+			color: #fbf7f7; 
+			text-decoration: none; 
+			font-weight: bold; 
+			-moz-border-radius: 5px; 
+			-webkit-border-radius: 5px; 
+			border-radius: 5px; 
+			box-shadow: 0 1px 10px #999; 
+			text-shadow: 0 -1px 1px #222; 
+			border: none; 
+			position: relative; 
+			cursor: pointer; 
+			font-size: 14px; 
+			opacity:0.6;
+			font-family:roboto,Verdana, Geneva, sans-serif;
+			transition:opacity 0.2s ease-in;
+			-moz-transition:opacity 0.2s ease-in;
+			-webkit-transition:opacity 0.2s ease-in;
+		}
+		#form input.button:hover{
+			opacity:1;
+		}
+		#cross{
+			background:url("../img/reset.jpg");
+			text:none;
+			width:9px;
+			height:10px;
+			border:none;
+			color:transparent;
+			cursor:pointer;
+			margin:0 auto;
+			float:right;
+		}
+		#crossdiv{
+			
+			height:5px;
+		}
+		table {
+			border-collapse:collapse;
+			font-family:roboto;
+
+		}
+		th{
+			background-color:#83bedc;
+			font-family:roboto;
+		}
+		tr{
+			border-radius:3px;
+		}
+		td{
+			padding:4px;
+			border-color:#adadad;
+			font-family:roboto;
+		}
+		tr:hover{
+			background-color : #89d1f5;
+			transition:all 0.1s;
+			-webkit-transition:all 0.2s;
+		}
+		
+		
+		footer{
+			position:fixed;
+			bottom:0;
+			width:100%;
+			text-align:center;
+			background-color:rgba(207, 207, 14, 0.28);
+			font-family:roboto;
+			color: #1db7cb;
+		}

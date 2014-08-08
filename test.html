@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" >
+function clicky()
+{
+	var reg = document.getElementById("reg").value;
+	if(/\1\[0-3]\w{3}\d{4}/.test(reg))
+		{
+			alert("Correct Format for Registration Number");
+		}
+		else
+		{
+			alert("Incorrect Format for Registration Number");
+		}
+	
+}
+</script>
+</head>
+<body>
+	<input type="text" id="reg" />
+	<input type="button" onclick="clicky()" />
+</body>
+</html>

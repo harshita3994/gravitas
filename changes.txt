@@ -1,0 +1,15 @@
+23rd July 2013
+1.Add a scroll down option while selecting the events and include a row for no.pf participants in that event/team
+2.While adding an event give an option to mention the no.of participants
+3.Day wise exporting
+Receipt,name,reg no,event name,cost,
+and then the total Cost
+
+
+8th of Aug
+2-3 variable seat number
+Combo Coding : seperate dropdown menu
+
+Categories in autocomplete
+BioSynx 3 events 200
+Robotics 3 events 500

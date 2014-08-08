@@ -1,0 +1,17 @@
+regex tutorial
+\d - digits
+\D - anything but digits
+\d{1,5} expect 1 to 5 digits
+\d{5} 5 digits
+\d* - digits expected
+\s - Space
+\S - anyting but a space
+\w - character
+\W - anything but a character
+\w+ - w is for letters and + is for one or more
+\. - To say that there is going to be a period
+? - 0 or 1 repetitions
+* - 0 or more repetitions
+{n} - n repeats
+[a-z] or [0-9] or [a-tA-f3-5] - Could include any og these characters
+	  -Calend[ae]r

@@ -1,0 +1,59 @@
+Process Flow Diagram
+
+1.indexs.php
+-->For login purposes
+2.index.php
+-->Basic Registration for an event
+-->goes to page1_process.php
+-->redirects to page2.php
+3.page2.php
+-->Event selection
+3.logoutu.php
+-->unsets the user session variable
+-->link on index.php
+4.logout.php
+-->unsets the id session variables ?? 
+checkout.php
+-->Shows all events,individual costs,total costing
+-->Allows to confirm or Delete
+
+Process Folder
+-->Contains all mysql Queries
+1.page1_process.php
+-->process's index.php
+-->sets ID session variable for every receipt
+2.page2_process.php
+-->counts the total costing
+-->makes an entry for every participant
+-->reduces the number of seats
+2.login.php
+-->checks appropriate login
+-->sets user session variable
+delete.php
+
+
+DATABASES
+1.page1 --> For basic participant registrations(receipt,name,reg,phone)
+2.page2 --> For event selection(event_name,total_participants,available_seats,costing)
+3.registration_details --> Once page2.php selects events,an entry is made for every participant
+                     -->(receipt,event,amount)
+bill --> Stores the final amount,recepit no,and graVITas volunteer who did the registration.
+4.user --> For users who can login
+5. user_details --> APPARENTLY shows active users
+
+REQUIRE FILES
+1.includes.php
+-->javascripts nad stylesheets
+
+2.header.php
+-->main graVITas logo
+
+3.sessions.php
+-->redirects to indexs.php(for relogin)
+
+4.config.php
+-->Database connect
+
+SESSION VARIABLES
+1.$_SESSION['user']
+2.$_SESSION['id']) --> for every particular receipt
