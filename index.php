@@ -133,14 +133,71 @@ if(isset($_GET['error']))
 				<input type="radio" name="payment" value="Mess">Mess Refund</input>
 				<input type="radio" name="payment" value="Cash">   Cash</input>
 				<input type="radio" name="payment" value="Card">   Card<br />
-				<select name="list" class="drop">
-					<option>Formal</option>
-					<option>Informal</option>
-					<option>Workshop</option>
-					<option>Premium</option>
-					<option value="Robotics">Combo - Robotics</option>
-				</select>
-				<?php
+				<table>
+                				<th>Premier</th>
+                				<th>Robomania</th>
+                				<th>Workshops</th>
+                				<th>Bits and Bytes</th>
+                				<th>Bullitrix</th>
+                				<th>Applied engineering</th>
+                				<th>Circuitrix</th>
+                				<th>Bioxyn</th>
+                				<th>Management</th>
+                				<th>Informals</th>
+                				<th>Quiz</th>
+                				<th>Online</th>
+                				<tr>
+                				     <td>
+                					<select name="list" class="drop">
+                					<option></option></select>
+                				    </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                			                      </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                			                       <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				    </td>
+                				    <td>
+                   					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				     <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				      <td>
+                					<select name="list" class="drop">
+                					</select>
+                				     </td>
+                				</tr>
+                				</table>
+               		<?php
 					if(isset($_GET['error']))
 					{
 						$error = $_GET['error'];
@@ -180,7 +237,7 @@ if(isset($_GET['error']))
 			
      </div>
 	</div>
-    <footer class="foot">graVITas2014.All rights reserved</footer>
+    <footer class="foot">&copy;graVITas2014.All rights reserved</footer>
 	</div>
 </body>
 </html>
