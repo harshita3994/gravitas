@@ -22,55 +22,55 @@ if(isset($_GET['error']))
 	function validate(){
 		var receipt = document.getElementsByName("receipt")[0].value;
 		var receipt_length = document.getElementsByName("receipt")[0].value.length;
-		if(receipt==""){
+    	var contact = document.getElementsByName("contact")[0].value;
+		var contact_length = document.getElementsByName("contact")[0].value.length;
+		var name = document.getElementsByName("names")[0].value;
+		var reg = document.getElementsByName("reg")[0].value;
+        var reg_length = document.getElementsByName("reg")[0].value.length;
+        if(receipt==""){
 			alert("Please enter the receipt number");
 			return false;
 		}
-		if(receipt_length != 5)
+		else if(receipt_length != 5)
 		{
 			alert("The receipt is a 5 digit number")
 			return false;
 		}
-		
-		var name = document.getElementsByName("names")[0].value;
-		if(name == "")
+		else if(name == "")
 		{
 			alert("Please enter a name");
 			return false;
 		}
-		if(/\d/.test(name))
+		else if(/\d/.test(name))
 		{
 			alert("Name should not contain numeric values");
 			return false;
 		}
-
-		var contact = document.getElementsByName("contact")[0].value;
-		var contact_length = document.getElementsByName("contact")[0].value.length;
-		if(contact==""){
+		else if(contact==""){
 			alert("Please enter the Contact Number");
 			return false;
 		}
-		if(isNaN(contact))
+		else if(isNaN(contact))
 		{
 			alert("Contact Number should contain digits only");
 			return false;
 		}
-		if(contact_length != 10)
+		else if(contact_length != 10)
 		{
 			alert("Contact number should be of 10 digits");
 			return false;
 		}
-		
-		var reg = document.getElementsByName("reg")[0].value;
-		var reg_length = document.getElementsByName("reg")[0].value.length;
-		if(reg=="")
+		else if(reg=="")
 		{
 			alert("Please enter the Registration Number");
 			return false;
 		}
-		if(reg_length!=9){
+		else if(reg_length!=9){
 			alert("Registration Number should be of 9 digits");
 			return false;
+		}
+		else
+		{  return true;
 		}
 		/*
 		if(/\1\d{1}\w{1,3}\d{4}/.test(reg))
@@ -149,50 +149,122 @@ if(isset($_GET['error']))
                 				<tr>
                 				     <td>
                 					<select name="list" class="drop">
-                					<option></option></select>
+                					<?php
+                                    $sql = mysql_query("SELECT * FROM page2 WHERE Type='Premier'");
+                                    while ($row = mysql_fetch_array($sql)){
+                                                                          echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                          }
+                                    ?>
+                					</select>
                 				    </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                    $sql = mysql_query("SELECT * FROM page2 WHERE Type='Robomaina'");
+                                     while ($row = mysql_fetch_array($sql)){
+                                     echo "<option value=\"owner1\">" . $row. "</option>";
+                                     }
+                                     ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                    $sql = mysql_query("SELECT * FROM page2 WHERE Type='Workshops'");
+                                    while ($row = mysql_fetch_array($sql)){
+                                    echo "<option value=\"owner1\">" . $row. "</option>";
+                                    }
+                                    ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Bits and bytes'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Bullitrix'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Applied Engineering'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 			                      </td>
                 				     <td>
                 					<select name="list" class="drop">
-                					</select>
+                				    <?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Circuitrix'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
+                						</select>
                 				     </td>
                 			                       <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Bioxyn'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Management'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				    </td>
                 				    <td>
                    					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Informals'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				     <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Quiz'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				      <td>
                 					<select name="list" class="drop">
+                					<?php
+                                                                        $sql = mysql_query("SELECT * FROM page2 WHERE Type='Online'");
+                                                                        while ($row = mysql_fetch_array($sql)){
+                                                                        echo "<option value=\"owner1\">" . $row. "</option>";
+                                                                        }
+                                                                        ?>
                 					</select>
                 				     </td>
                 				</tr>
